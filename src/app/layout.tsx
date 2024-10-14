@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from "@/ui/fonts";
 
+
 export const metadata: Metadata = {
-  title: "Next.js Cognito Authentication",
-  description: "Cognito authenticated Next.js app.",
+  title: "Fvlcon Auth",
+  description: "Custom auth",
 };
 
 export default function RootLayout({
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        
+        {children}
+        </body>
     </html>
   );
 }
